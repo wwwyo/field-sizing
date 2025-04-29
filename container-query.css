@@ -1,0 +1,17 @@
+.post {
+  container-type: inline-size;
+  container-name: sidebar;
+  width: 800px;
+}
+
+.card h2 {
+  font-size: 1em;
+    background-color: #f0f0f0;
+}
+
+@container sidebar (min-width: 700px) {
+  .card h2 {
+    font-size: 2em;
+    width: 100cqi;
+  }
+}
