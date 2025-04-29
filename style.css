@@ -1,3 +1,35 @@
+/* View Transitions APIを有効化 */
+@view-transition {
+  navigation: auto;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+.item {
+  width: 100px;
+  height: 100px;
+  background-color: lightblue;
+  padding: 10px;
+  margin: 20px 0;
+  /* view-transition-name は HTML側でインラインスタイルで指定 */
+}
+
+.item.detail {
+  width: 200px;
+  height: 200px;
+  background-color: lightcoral;
+}
+
+#item-1 {
+  view-transition-name: item;
+}
+
+#item-2 {
+  view-transition-name: item;
+}
+
 select, ::picker(select) {
   appearance: base-select;
 }
